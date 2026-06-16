@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-50 text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 lg:px-8 py-20;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-crimson-400 mb-3;
+  }
+
+  .section-title {
+    @apply font-display text-5xl md:text-6xl text-crimson-400 leading-tight mb-6;
+  }
+
+  /* Flat editorial card — thin border, no shadow */
+  .card {
+    @apply bg-cream-50 border border-cream-200 p-6 transition-colors duration-200 hover:border-crimson-300;
+  }
+
+  .tag {
+    @apply inline-block text-xs font-medium px-3 py-1 border border-cream-200 bg-cream-100 text-gray-700;
+  }
+
+  .tag-blush {
+    @apply inline-block text-xs font-medium px-3 py-1 border border-crimson-200 bg-crimson-100 text-crimson-400;
+  }
+
+  .tag-gold {
+    @apply inline-block text-xs font-medium px-3 py-1 border border-cream-200 bg-cream-100 text-gray-700;
+  }
+
+  /* Outlined pill button */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-crimson-400 text-crimson-400 px-7 py-3 text-sm font-semibold hover:bg-crimson-400 hover:text-white transition-colors duration-200;
+  }
+
+  /* Filled pill button */
+  .btn-filled {
+    @apply inline-flex items-center gap-2 bg-crimson-400 text-white px-7 py-3 text-sm font-semibold hover:bg-crimson-500 transition-colors duration-200;
+  }
+}

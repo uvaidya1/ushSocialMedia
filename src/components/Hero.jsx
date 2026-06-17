@@ -11,7 +11,7 @@ export default function Hero() {
 
 
         <img
-          src="/headshot.png"
+          src={`${import.meta.env.BASE_URL}headshot.png`}
           alt="Ushma Vaidya"
           className="relative z-10 w-full h-full object-contain object-bottom animate-float"
           style={{ animationDelay: '1s' }}

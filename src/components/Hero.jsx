@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display text-6xl md:text-7xl text-crimson-400 leading-[1.0] mb-6 animate-fade-up">
-              Hi, I'm Ushma.
+              Hi, I'm Ushma!
               <br />
               <span className="font-serif italic font-normal text-4xl md:text-6xl text-gray-900">
                 I turn data into stories

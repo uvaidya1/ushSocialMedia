@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/uvaidya1/ushSocialMedia',
+  base: '/ushSocialMedia',
   build: {
     rollupOptions: {
       output: {
